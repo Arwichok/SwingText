@@ -11,6 +11,7 @@ import com.arwichok.Main;
 public class AboutHelp implements ActionListener{
 	JFrame frame;
 	String version = Main.VERSION;
+	String nameProgram = Main.CAPTION;
 	Runtime r;
 	long memory;
 
@@ -25,7 +26,7 @@ public class AboutHelp implements ActionListener{
 		
 
 		JOptionPane.showMessageDialog(frame, 
-			"SwingText - v" + version + "    |    RAM: " + memory/1048576 + " Mb", 
+			nameProgram + " - " + version + "\nRAM: " + memory/1048576 + " Mb", 
 			"About", 
 			JOptionPane.DEFAULT_OPTION);
 
